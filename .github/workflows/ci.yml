@@ -30,4 +30,4 @@ jobs:
 
     - name: Rodar testes
       run: |
-        set PYTHONPATH=. && pytest -s testes.py -v
+        pipenv run pytest -s testes.py -v
