@@ -1,0 +1,33 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+
+jobs:
+ build:
+  runs-on: ubuntu-latest
+
+  steps:
+    - name: Checar codigo
+      uses: actions/checkout@v3
+
+    - name: Configurar python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.11
+
+    - name: Instalar pipenv
+      run: |
+        pip install pipenv
+
+    - name: Executar ambiente pipenv
+      run: |
+        pipenv install
+
+    - name: Rodar testes
+      run: |
+        pipenv run pytest -s testes.py -v
