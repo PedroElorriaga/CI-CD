@@ -199,7 +199,7 @@ def test_unitario_cep_api(mock_get, mock_request):
         "ibge": "3505708",
         "gia": "2069",
         "ddd": "11",
-        "siafi": "6210"
+        "siafi": "6213"
     }
     cep_input = '06449410'
 
