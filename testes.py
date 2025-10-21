@@ -174,7 +174,7 @@ def mock_request() -> MagicMock:
         "ibge": "3505708",
         "gia": "2069",
         "ddd": "11",
-        "siafi": "6213"
+        "siafi": "6210"
     }
 
     return resposta
