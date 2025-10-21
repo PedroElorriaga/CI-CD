@@ -1,0 +1,5 @@
+Após a criação do ci.yml
+
+Criamos uma branch protection rules
+
+E ativamos o require status checks to pass before merging
